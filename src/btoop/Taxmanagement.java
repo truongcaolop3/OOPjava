@@ -66,7 +66,6 @@ public class Taxmanagement {
             TaxWorker = workers.get(i).payTax(incomeWorker, start_time, end_time);
             System.out.println();
             System.out.println("------------ " + workers.get(i).getCitizenID() + " ------------");
-            //System.out.println("\nWorker information " + (i+1) + " is ");
             workers.get(i).xuat();
             System.out.println("thuế của: " + workers.get(i).getCitizenID() + " là " + (long) Math.floor(TaxWorker) + " VND");
             System.out.println();
@@ -95,7 +94,6 @@ public class Taxmanagement {
             TaxBusinessPerson = businessPersons.get(i).payTax(incomeBusinessPerson, start_time, end_time);
             System.out.println();
             System.out.println("------------ " + businessPersons.get(i).getCitizenID() + " ------------");
-            //System.out.println("\nBusiness Person information " + (i+1) + " is ");
             businessPersons.get(i).xuat();
             System.out.println("thuế của: " + businessPersons.get(i).getCitizenID() + " là " + (long) Math.floor(TaxBusinessPerson) + " VND");
             System.out.println();
